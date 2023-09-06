@@ -1,0 +1,413 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+}
+body {
+	font-family: "游ゴシック", "Yu Gothic","游ゴシック体", YuGothic ,"メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-size: 100%;
+	line-height: 1;
+	background-image: url(../img/background.jpg);
+}
+.container{
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+.row {
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+header {
+	background-color: #FADAE5;
+	padding: 0.5rem 0;
+	text-align: center;
+}
+nav.main-nav{
+	background-color: #FADAE5;
+	padding: 1rem;
+}
+nav.main-nav li {
+	flex: 1;
+	margin: 0.5rem 0;
+}
+nav.main-nav li a{
+	text-decoration: none;
+	color: #83416A;
+}
+nav.main-nav li a p{
+	font-size: 10px;
+	
+}
+
+nav.main-nav li a:hover,
+nav.main-nav li a:focus {
+	color: #FAFF50;
+	background-image: url(../img/point.svg);
+	background-repeat: no-repeat;
+	padding: 4px 0 5px 30px;
+}
+
+
+/*ここからNewsのところ*/
+
+.top-news {
+	background-color: #FFFFFF;
+	padding: 1rem;
+	width: 40%;
+}
+section h2 {
+	color: #784467;
+	margin: 0.2rem 0rem;
+	border-bottom: #84416A 1.5px solid;
+	background-image: url(../img/point.svg);
+	background-repeat: no-repeat;
+	padding: 4px 0 3px 30px;
+}
+/*.top-news dl {
+	padding: 0.5rem 1rem;
+	color: #84426B;
+	line-height: 1rem;
+	border-bottom: 1px dotted;
+	border-color: #84426B;
+}*/
+.top-news dt {
+	font-size: 13px;
+	margin: 0.8rem;
+	color: #672A50;
+
+}
+.top-news dd {
+	margin: 0.1rem 1.5rem;
+	color: #84426B;
+	border-bottom: 1px dotted;
+	
+}
+
+.top-news-background {
+	background-color: #FCEFF5;
+	border: 3px solid;
+	border-color: #F0A6C4;
+	height: 13.85rem;
+	overflow-y: scroll;
+}
+
+
+/*ここからSpecのところ*/
+
+
+.top-product {
+	padding: 1rem 1rem 1rem 0;
+	background-color: #FFFFFF;
+	width: 60%;
+}
+.top-product-background {
+	background-color: #FCEFF5;
+	border: 3px solid;
+	border-color: #F0A6C4;
+	/*height: 65%;*/
+}
+.top-product img {
+	width: 80%;
+	height: auto;
+	margin: 1.5rem 1rem;
+}
+p .product-text{
+	width: 100%;
+}
+p.pacage {
+	width: calc(100% / 2);
+}
+dl.price {
+	width: calc(100% / 2);
+	padding-top: 1.5rem;
+}
+.price .row {
+	margin-bottom: 0.5rem;
+}
+.price dt {
+	width: 5rem;
+	text-align: center;
+	color: #84416A;
+	background-color: #F0A6C4;
+	padding: 0.25rem;
+}
+.price dd {
+	padding: 0.25rem;
+	color: #84416A;
+}
+
+
+/*ここからバナーのところ*/
+
+
+.banner {
+	background-color: #FFFFFF;
+	text-align: center;
+	flex: 1;
+	padding: 1rem;
+}
+
+
+
+
+/*ここからキャラクター選択のところ*/
+
+main.chara-choice{
+	background-color: #83416A;
+}
+
+main.chara-choice .row.chara-icon{
+	justify-content: center;
+}
+main.chara-choice img {
+	width: 4rem;
+	padding: 0.5rem 0 ;
+	text-align: center;
+}
+
+
+
+
+
+
+/*ここからキャラクターのところ*/
+
+main.character {
+	background-color: #FFFFFF;
+}
+main .main-chara{
+	position: relative;
+	
+}
+main .chara-background-img {
+	padding: 1rem;
+	width: 100%;
+	margin-top: -5rem;
+	margin-bottom: -7rem;
+}
+
+main .chara-name {
+	position: absolute;
+	top: 12rem;
+	left: 7rem;
+	width: 11rem;
+	
+}
+
+main .chara-display {
+	position: absolute;
+	top: 26rem;
+	left: 6.2rem;
+	width: 12rem;
+}
+
+main p.chara-text{
+	color: #83416A;
+	position: absolute;
+	top: 34.5rem;
+	left: 19rem;
+	width: 16rem;
+	background-color: rgba(238,185,204,0.87);
+	font-size:10px;
+	line-height: 1rem;
+	padding-top: 1rem;
+	min-height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*ここからムービーのところ*/
+main p{
+	color: #83416A;
+	padding: 6rem 2rem  1rem;
+	font-size: 20px;
+	text-align: center;
+}
+main.special {
+	background-color: #FFFFFF;
+	position: relative;
+	text-align: center;
+
+	
+}
+video {
+	width: 90%;
+	margin: 0  2rem 6rem 2rem;
+}
+
+main.special iframe {
+	margin: 0px 0px 100px 0px;
+
+}
+
+/*ここからストーリーのところ*/
+
+.story {/*親div*/
+  position: relative;/*相対配置*/
+  }
+
+.story p {
+  position: absolute;/*絶対配置*/
+  color: #83416A;
+  top: 3rem;
+  left: 10rem;
+	width: 39rem;
+	text-align: center;
+	line-height: 4rem;
+	font-size: 16px;
+  }
+
+.story img {
+  width: 100%;
+  }
+
+
+/*ここからシステムのところ*/
+.system {
+	background-color: white;
+}
+.system-text{
+	background-color: #FCEFF5;
+	border: 10px solid;
+	border-color: #F0A6C4;
+	width:rem;
+	color: #83416A;
+	text-align: center;
+	
+}
+.system-text h1{
+	color: #83416A;
+	text-align: center;
+	padding: 1rem;
+	border-top: 3px solid #F0A6C4;
+	border-bottom: 3px solid #F0A6C4;
+	font-size: 18px;
+}
+dl.system-exposition{
+	padding: 6rem 4rem;
+}
+
+.system img{
+	width: 40%;
+	height: 100%;
+	padding: 5rem 1rem;
+	filter: drop-shadow(5px 5px 5px #A57695);
+	
+}
+
+.img-left {
+	margin-left: 5rem;
+}
+.img-right {
+	margin-left: 2rem;
+}
+
+
+
+.system-exposition dt {
+	background-image: url(../img/point.svg);
+	background-repeat: no-repeat;
+	padding: 4px 0 5px 30px;
+	text-align: left;
+}
+
+
+.system-exposition dd{
+	background-color: rgba(255,210,232,1.00);
+	padding: 1rem;
+	width: 20rem;
+	line-height: 1.5rem;
+	font-size: 14px;
+}
+
+
+hr.system-border {
+	border-width: 2px 0px 0px 0px;
+border-style: dashed;
+border-color: #F0A6C4;
+height: 1px;
+}
+
+
+
+/*ここからショップのところ*/
+.shop {
+	background-color: white;
+}
+.shop h1 {
+	color: #83416A;
+	text-align: center;
+	padding: 8rem 0 1rem 0;
+}
+
+
+
+.shop figure {
+	padding: 1rem;
+}
+
+.shop figcaption {
+	color: #83416A;
+	font-size: 15px;
+	text-align: center;
+	line-height: 2rem;
+}
+
+p .andmore{
+	text-align: right;
+
+}
+
+/*ここからグーグルマップのところ*/
+
+.googlemap {
+	padding: 10rem 3rem 3rem 3rem;
+	
+}
+
+.googlemap-text img {
+	padding: 10rem 3rem 0 0;
+	width: 20rem;
+}
+
+.googlemap-text {
+	text-align: left;
+	line-height: 1.5rem;
+	font-size: 12px;
+	padding: 0 1rem 2rem 3rem;
+}
+
+
+
+
+/*ここからフッターのところ*/
+footer {
+	bottom: 0;
+	background-color: #FADAE5;
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0;
+	color: #83416A;
+	
+}
+footer .icon {
+	display: inline-block;
+	width: 9%;
+	text-align: center;
+	margin: 0 ;
+}
+footer .icon a{
+	margin: 0.3rem;
+}
+footer .icon2 {
+	margin: 2rem;
+}
